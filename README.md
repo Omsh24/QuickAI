@@ -1,114 +1,117 @@
-सर्व.AI (ServAI)
+सर्व.AI
+Overview
 
-A unified AI SaaS platform built with the PERN Stack (PostgreSQL, Express, React, Node.js). Experience a single space for modern AI-powered tools including image processing, text generation, resume analysis, and much more.
-🚀 Features
+सर्व.AI (ServAI) is an all-in-one AI workspace that seamlessly integrates a variety of powerful AI tools under one platform. Designed for modern productivity, it enables users to process images, generate and analyze text, review resumes, and more—all in a responsive, user-friendly environment.
+Features
 
-    All-in-One AI Workspace: Access multiple AI services (image, text, PDF, resume, etc.) from one place.
+    Unified AI Suite: Access image processing, text generation, resume review, and other AI utilities from a single dashboard.
 
-    Modern Web App: Built with React, Express, PostgreSQL, and Node.js for full-stack robustness.
+    Image AI Tools: Remove image backgrounds, erase objects, and enhance visuals using Cloudinary and advanced endpoints.
 
-    User Authentication: Secure registration, login, and profile management.
+    Document AI: Upload and analyze resumes or PDFs for instant feedback and insights.
 
-    Role-based Access: Premium and standard tiers for feature access.
+    User Management: Secure authentication, profile editing, personalized dashboards, and access control (premium & standard users).
 
-    Image AI Tools: Background removal, object removal, and more via Cloudinary and custom endpoints.
+    Modern UI: Smooth navigation, responsive design, and real-time updates.
 
-    Document AI: Resume analysis and review, PDF conversion, and content extraction.
+    Role-Based Access: Distinct features for premium and regular users.
 
-    Real-Time Dashboard: Track your requests and see results instantly.
+    Secure & Scalable: Robust backend with PostgreSQL, Express.js, and AWS integrations.
 
-    Responsive Design: Optimized for desktop and mobile.
+Demo
+<!-- Add a demo video link here if available. Example: -->
+Video Demonstration
+<!-- <a href="YOUR_VIDEO_LINK"> <img src="YOUR_VIDEO_THUMBNAIL" width="500"/> </a> -->
 
-🏗️ Tech Stack
-Frontend	Backend	Database	Cloud & AI	Auth
-React.js	Node.js	PostgreSQL	AWS, Cloudinary	Clerk.dev
-TailwindCSS	Express.js	Prisma ORM	OpenAI, Other APIs	JWT/OAuth
-✨ Getting Started
+Demo video coming soon!
+Preview
+<!-- Replace these with actual links or screenshots from your ServAI deployment --> <img src="https://github.com/Omsh24/ServAI/assets/preview1.png" width="900" alt="ServAI Dashboard preview"/> <img src="https://github.com/Omsh24/ServAI/assets/preview2.png" width="900" alt="Image AI preview"/> <img src="https://github.com/Omsh24/ServAI/assets/preview3.png" width="900" alt="Resume review preview"/>
+Technologies Used
+
+    Frontend: React.js, Vite, TailwindCSS, React Router
+
+    Backend: Node.js, Express.js, Prisma
+
+    Database: PostgreSQL
+
+    Cloud/AI: Cloudinary, AWS, OpenAI
+
+    Authentication: Clerk.dev, JWT
+
+    APIs: RESTful API
+
+Installation & Setup
 Prerequisites
 
     Node.js (v18+)
 
-    PostgreSQL (running instance)
+    PostgreSQL
 
-    Cloudinary account
+    Cloudinary & Clerk accounts for API keys
 
-    Clerk.dev account for authentication (or update to your auth provider)
+    npm
 
-Installation
-
-    Clone the repository
+1. Clone the repository
 
 bash
 git clone https://github.com/Omsh24/ServAI.git
 cd ServAI
 
-Install dependencies
+2. Install dependencies
+
+    Backend:
 
 bash
 npm install
-cd client && npm install # for frontend dependencies
 
-Set up environment variables
-Copy .env.example to .env and fill in your configs (DB, API keys, Cloudinary, Clerk, etc.)
+Frontend:
 
-Migrate the database
+    bash
+    cd client
+    npm install
+    cd ..
+
+3. Configuration
+
+    Create a .env file in the root directory
+
+    Add your PostgreSQL URI, Clerk and Cloudinary API keys, and other required environment variables
+
+Sample .env variables:
+
+text
+DATABASE_URL=
+CLERK_SECRET_KEY=
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+OPENAI_API_KEY=
+PORT=3000
+...
+
+4. Run migrations
 
 bash
 npx prisma migrate dev
 
-Start the server
+5. Run the project
+
+    Backend:
+
+bash
+npm run dev
+
+Frontend:
 
     bash
+    cd client
     npm run dev
-    cd client && npm run dev # in a separate terminal for the frontend
 
-Project Structure
+Contributing
 
-text
-/server     # Express API, PostgreSQL, auth and AI endpoints
-/client     # React app (Vite/Tailwind)
+If you'd like to contribute to this project, feel free to fork the repository, create a feature branch, and submit a pull request.
+Contact
 
-🛠️ Key Endpoints & Usage
-Endpoint	Method	Description
-/api/ai/remove-image-background	POST	Remove background from images
-/api/ai/remove-image-object	POST	Remove objects from images
-/api/ai/review-resume	POST	Resume review and feedback
-/api/ai/generate-text	POST	Generate/Analyze text
+    Om Shukla: omshukla2403@gmail.com
 
-See the frontend for usage examples and UI integration.
-📝 Customization
-
-    Add or modify AI tools by expanding /api/ai/* backend routes.
-
-    Change permissions and pricing logic in the middleware/controllers.
-
-    Update styling or components in the React frontend as needed.
-
-💡 Contributing
-
-    Fork this repository.
-
-    Create your branch: git checkout -b feature/my-feature
-
-    Commit your changes: git commit -am 'Add new feature'
-
-    Push to the branch: git push origin feature/my-feature
-
-    Open a Pull Request.
-
-📄 License
-
-This project is open-sourced under the MIT License.
-🙌 Acknowledgements
-
-    PERN stack
-
-    Cloudinary for image processing AI
-
-    Clerk.dev for authentication
-
-    OpenAI/other APIs for advanced content analysis
-
-For questions, feature requests, or support, please open an issue or contact the maintainer through the repository.
-
-Let your users and contributors know that "सर्व.AI" combines every essential AI product into one powerful, modern workspace!
+Empower your productivity with all your favorite AI tools — unified in one modern workspace: सर्व.AI!
