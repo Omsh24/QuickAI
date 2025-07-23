@@ -82,14 +82,14 @@ git clone https://github.com/Omsh24/ServAI.git
 ### 3. Configuration
 backend: Create a .env file in the backend directory and add your MongoDB URI and any necessary environment variables.
 **Sample env file:**
--DATABASE_URL = 
--CLERK_PUBLISHABLE_KEY =
--CLERK_SECRET_KEY =
--GEMINI_API_KEY =
--CLIPDROP_API_KEY =
--CLOUDINARY_CLOUD_NAME =
--CLOUDINARY_API_KEY =
--CLOUDINARY_API_SECRET =
+-DATABASE_URL = <br/>
+-CLERK_PUBLISHABLE_KEY = <br/>
+-CLERK_SECRET_KEY = <br/>
+-GEMINI_API_KEY = <br/>
+-CLIPDROP_API_KEY = <br/>
+-CLOUDINARY_CLOUD_NAME = <br/>
+-CLOUDINARY_API_KEY = <br/>
+-CLOUDINARY_API_SECRET = <br/>
 
 ### 4. Run the project
 1. Server
