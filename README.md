@@ -28,7 +28,7 @@ So Go ahead and try ServAI to meet all you expectations in just one place.
 ### Video Demonstration
 Here's a demo video showing the functionality of the Civic Engagement Portal:
 
-<a href="https://drive.google.com/file/d/1myPL3z8fu4DhwnI7TTjDNkK58fcyXx5w/view?usp=sharing">
+<a href="https://drive.google.com/file/d/1PN-6FhuFMLD0V6NLS9Gnqa6WsvEQu3VE/view">
   <img width="1613" height="715" alt="image" src="https://github.com/user-attachments/assets/817213e1-610e-4382-a3a0-03ca51d072e4" />
 </a>
 
